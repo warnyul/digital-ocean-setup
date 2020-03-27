@@ -5,7 +5,7 @@ sudo cat > /etc/docker/daemon.json <<EOF
   "tlsverify": true,
   "tlscacert": "/var/docker/ca.pem",
   "tlscert": "/var/docker/server.pem",
-  "tlskey": "/var/docker/server.key"
+  "tlskey": "/var/docker/key.pem"
 }
 EOF
 sudo mkdir -p /etc/systemd/system/docker.service.d/
