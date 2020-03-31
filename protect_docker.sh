@@ -4,7 +4,7 @@ sudo cat > /etc/docker/daemon.json <<EOF
   "tls": true,
   "tlsverify": true,
   "tlscacert": "/var/docker/ca.pem",
-  "tlscert": "/var/docker/server.pem",
+  "tlscert": "/var/docker/cert.pem",
   "tlskey": "/var/docker/key.pem"
 }
 EOF
